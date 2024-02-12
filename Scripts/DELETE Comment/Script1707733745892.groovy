@@ -17,7 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequestAndVerify(findTestObject('GET Comment'))
-
-WS.verifyElementPropertyValue(response, 'name', 'repellat consequatur praesentium vel minus molestias voluptatum')
+WS.sendRequestAndVerify(findTestObject('DELETE Comment'))
 
